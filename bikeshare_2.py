@@ -39,7 +39,7 @@ def load_data(city, month, day):
     """
     Loads data for the specified city and filters by month and day if applicable.
     Args:
-        (str) city - name of the city to analyze
+        (str) city - name of the city to analyze the city data
         (str) month - name of the month to filter by, or "all" to apply no month filter
         (str) day - name of the day of week to filter by, or "all" to apply no day filter
     Returns:
@@ -57,7 +57,7 @@ def load_data(city, month, day):
         
     return df
 def time_stats(df):
-    """Displays statistics on the most frequent times of travel."""
+    """Displays statistics on the most frequent and favourite times of travel."""
 
     print('\nCalculating The Most Frequent Times of Travel...\n')
     start_time = time.time()

@@ -17,3 +17,5 @@ It's important to give proper credit. Add links to any repo that inspired you or
 
 ### this was developed using Spider as the medium for Python.
 
+###Washingon was not included year of birth or the gender details.
+
