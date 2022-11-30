@@ -4,10 +4,10 @@
 Include the date you created this project and README file.2022-11-30
 
 ### Project Title
-Replace the Project Title : Bikeshare Project
+Replace the Project Title : Bikeshare_2 Project
 
 ### Description
-Describe what your project is about and what it does : it gives data on bikeshare in 3 cities
+Describe what your project is about and what it does : This provides the complete bike share data of Washington, New York City and Chicago, wherin you can search many data.
 
 ### Files used
 Include the files used : new york city, chicago & washington.
@@ -15,3 +15,4 @@ Include the files used : new york city, chicago & washington.
 ### Credits
 It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
 
+### this was developed using Spider as the medium for Python.
