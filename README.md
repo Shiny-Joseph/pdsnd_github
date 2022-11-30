@@ -16,3 +16,5 @@ Include the files used : new york city, chicago & washington.
 It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
 
 ### this was developed using Spider as the medium for Python.
+
+### changes were done twice to theis readme.md
