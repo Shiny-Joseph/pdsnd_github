@@ -2,12 +2,12 @@ import time
 import pandas as pd
 
 CITY_DATA = { 'chicago': 'chicago.csv','new york city': 'new_york_city.csv','washington': 'washington.csv' }
-MONTH_NUMBER = { '01': 'january','02': 'february','03': 'march','04': 'april','05': 'may','06':'june','07': 'july','08': 'august','09': 'september','10': 'october','11': 'november','12':'december' }
+MONTH_NUMBER = { '01': 'january','02': 'february','03': 'march','04': 'april','05': 'may','06':'june' }
 def get_filters():
     """
     Asks user to specify a city, month, and day to analyze.
     Returns:
-        (str) city - name of the city to analyze city
+        (str) city - name of the city to analyze
         (str) month - name of the month to filter by, or "all" to apply no month filter
         (str) day - name of the day of week to filter by, or "all" to apply no day filter
     """
@@ -39,7 +39,7 @@ def load_data(city, month, day):
     """
     Loads data for the specified city and filters by month and day if applicable.
     Args:
-        (str) city - name of the city to analyze the city data
+        (str) city - name of the city to analyze
         (str) month - name of the month to filter by, or "all" to apply no month filter
         (str) day - name of the day of week to filter by, or "all" to apply no day filter
     Returns:
@@ -57,7 +57,7 @@ def load_data(city, month, day):
         
     return df
 def time_stats(df):
-    """Displays statistics on the most frequent and favourite times of travel."""
+    """Displays statistics on the most frequent times of travel."""
 
     print('\nCalculating The Most Frequent Times of Travel...\n')
     start_time = time.time()
@@ -99,7 +99,7 @@ def station_stats(df):
 def trip_duration_stats(df):
     """Displays statistics on the total and average trip duration."""
 
-    print('\nCalculating Trip Duration...\n')
+    print('\nCalculating Trip Duration......\n')
     start_time = time.time()
 
     # display total travel time
@@ -111,7 +111,7 @@ def trip_duration_stats(df):
     print('-'*40)
 
 def user_stats(df,city):
-    """Displays statistics on bikeshare users. gives more details about the user"""
+    """Displays statistics on bikeshare users in deatial."""
 
     print('\nCalculating User Stats...\n')
     start_time = time.time()
@@ -136,16 +136,16 @@ def user_stats(df,city):
 
 def view_data(df):
 
-    """ Printing raw data based on customer rquirement, whether customer wants to see more or not """
+    """ Printing raw data based on customer rquirement """
 
-    display = input("Would you like to view 5 rows of individual trip data? Enter yes or no?\n")
-    if display.lower() =='yes':
+    display = input("Would you like to view 5 rows of individual trip data? Enter y/n?\n")
+    if display.lower() =='y':
         start_loc = 0
         while True:
             print(df.iloc[start_loc:start_loc+5].reset_index(drop=True))
             start_loc += 5
-            display = input("Do you wish to continue? Enter yes or no?\n").lower()
-            if display != 'yes':
+            display = input("Do you wish to continue? Enter y/n?\n").lower()
+            if display != 'y':
                 break   
 
 def main():
@@ -158,10 +158,9 @@ def main():
         trip_duration_stats(df)
         user_stats(df,city)
         view_data(df)
-        restart = input('\nWould you like to restart? Enter yes or no.\n')
-        if restart.lower() != 'yes':
+        restart = input('\nWould you like to restart? Enter y/n.\n')
+        if restart.lower() != 'y':
            break
 
 if __name__ == "__main__":
 	main()
-
