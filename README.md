@@ -12,6 +12,10 @@ It provides different statistics about the different rides and the users. also d
 ### Credits : The below wesites supported me in this project.
 
 https://www.geeksforgeeks.org/python-pandas-dataframe-groupby/
-
+https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.groupby.html
+http://greenteapress.com/thinkpython/html/index.html
+https://runestone.academy/runestone/books/published/pythonds/index.html
+https://docs.google.com/viewer?a=v&pid=sites&srcid=dnVrbWFsYmFzYS5jb218d3d3fGd4OjU3NWZjOWU1MTM4ZTI4OQ
+https://docs.streamlit.io/library/get-started/main-concepts#widgets
 
 
